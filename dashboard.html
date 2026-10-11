@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة المعلومات | جمعية أثر للديمقراطية والحوكمة</title>
+  <meta name="description" content="لوحة معلومات الجمعية.">
+  <meta name="theme-color" content="#0d0f0e">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="app-header">
+    <div class="brand">
+      <img src="logo.png" alt="" class="logo" width="48" height="44">
+      <span>جمعية أثر للديمقراطية والحوكمة</span>
+    </div>
+    <div class="app-user">
+      <span>اسم المستخدم</span>
+      <a href="login.html" class="btn small">تسجيل الخروج</a>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <nav class="app-nav" aria-label="قائمة اللوحة">
+      <a href="dashboard.html" class="active" aria-current="page">لوحة المعلومات</a>
+      <a href="admin.html">لوحة التحكم</a>
+      <a href="index.html">العودة إلى الموقع</a>
+    </nav>
+    <main class="app-main" id="main">
+      <h1 class="app-title">ملخص عام</h1>
+      <div class="stats">
+        <div class="stat"><span class="stat-label">الأعضاء</span><span class="stat-value">—</span></div>
+        <div class="stat"><span class="stat-label">المتطوعون</span><span class="stat-value">—</span></div>
+        <div class="stat"><span class="stat-label">الأنشطة والبرامج</span><span class="stat-value">—</span></div>
+        <div class="stat"><span class="stat-label">رسائل جديدة</span><span class="stat-value">—</span></div>
+      </div>
+
+      <h2 class="app-sub">الوضع المالي</h2>
+      <div class="stats">
+        <div class="stat"><span class="stat-label">إجمالي الإيرادات</span><span class="stat-value">—</span></div>
+        <div class="stat"><span class="stat-label">إجمالي المصروفات</span><span class="stat-value">—</span></div>
+        <div class="stat"><span class="stat-label">الرصيد</span><span class="stat-value">—</span></div>
+      </div>
+      <div class="placeholder">رسم بياني للإيرادات والمصروفات يُضاف لاحقاً.</div>
+
+      <h2 class="app-sub">آخر الحركات المالية</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">آخر الحركات المالية</caption>
+          <thead><tr><th scope="col">التاريخ</th><th scope="col">البيان</th><th scope="col">النوع</th><th scope="col">المبلغ</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>إيراد / مصروف</td><td>—</td></tr></tbody>
+        </table>
+      </div>
+
+      <h2 class="app-sub">آخر طلبات التطوع والعضوية</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">آخر طلبات التطوع والعضوية</caption>
+          <thead><tr><th scope="col">التاريخ</th><th scope="col">الاسم</th><th scope="col">النوع</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>تطوع / عضوية</td><td>جديد</td></tr></tbody>
+        </table>
+      </div>
+
+      <h2 class="app-sub">آخر الرسائل</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">آخر الرسائل</caption>
+          <thead><tr><th scope="col">التاريخ</th><th scope="col">المرسل</th><th scope="col">الموضوع</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td><td>غير مقروءة</td></tr></tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

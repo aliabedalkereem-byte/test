@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم | جمعية أثر للديمقراطية والحوكمة</title>
+  <meta name="description" content="لوحة تحكم الجمعية.">
+  <meta name="theme-color" content="#0d0f0e">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+
+  <header class="app-header">
+    <div class="brand">
+      <img src="logo.png" alt="" class="logo" width="48" height="44">
+      <span>جمعية أثر للديمقراطية والحوكمة</span>
+    </div>
+    <div class="app-user">
+      <span>اسم المستخدم</span>
+      <a href="login.html" class="btn small">تسجيل الخروج</a>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <nav class="app-nav" aria-label="قائمة اللوحة">
+      <a href="dashboard.html">لوحة المعلومات</a>
+      <a href="admin.html" class="active" aria-current="page">لوحة التحكم</a>
+      <a href="index.html">العودة إلى الموقع</a>
+    </nav>
+    <main class="app-main" id="main">
+      <h1 class="app-title">إدارة المحتوى والبيانات</h1>
+      <div class="tabs" role="tablist" aria-label="أقسام الإدارة">
+        <button class="tab active" role="tab" id="tab-news" data-tab="news" aria-selected="true" aria-controls="panel-news" tabindex="0" type="button">الأخبار</button>
+        <button class="tab" role="tab" id="tab-programs" data-tab="programs" aria-selected="false" aria-controls="panel-programs" tabindex="-1" type="button">الأنشطة والبرامج</button>
+        <button class="tab" role="tab" id="tab-publications" data-tab="publications" aria-selected="false" aria-controls="panel-publications" tabindex="-1" type="button">الإصدارات</button>
+        <button class="tab" role="tab" id="tab-members" data-tab="members" aria-selected="false" aria-controls="panel-members" tabindex="-1" type="button">الأعضاء</button>
+        <button class="tab" role="tab" id="tab-volunteers" data-tab="volunteers" aria-selected="false" aria-controls="panel-volunteers" tabindex="-1" type="button">المتطوعون</button>
+        <button class="tab" role="tab" id="tab-partners" data-tab="partners" aria-selected="false" aria-controls="panel-partners" tabindex="-1" type="button">الشركاء والداعمون</button>
+        <button class="tab" role="tab" id="tab-messages" data-tab="messages" aria-selected="false" aria-controls="panel-messages" tabindex="-1" type="button">الرسائل</button>
+        <button class="tab" role="tab" id="tab-finance" data-tab="finance" aria-selected="false" aria-controls="panel-finance" tabindex="-1" type="button">المالية</button>
+        <button class="tab" role="tab" id="tab-users" data-tab="users" aria-selected="false" aria-controls="panel-users" tabindex="-1" type="button">المستخدمون والصلاحيات</button>
+      </div>
+      <section class="panel active" role="tabpanel" id="panel-news" aria-labelledby="tab-news">
+        <div class="panel-head">
+          <h2 class="app-sub">الأخبار</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">الأخبار</caption>
+          <thead><tr><th scope="col">العنوان</th><th scope="col">التاريخ</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>مسودة / منشور</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-programs" aria-labelledby="tab-programs">
+        <div class="panel-head">
+          <h2 class="app-sub">الأنشطة والبرامج</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">الأنشطة والبرامج</caption>
+          <thead><tr><th scope="col">الاسم</th><th scope="col">التاريخ</th><th scope="col">المكان</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td><td>قادم / منتهٍ</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-publications" aria-labelledby="tab-publications">
+        <div class="panel-head">
+          <h2 class="app-sub">الإصدارات</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">الإصدارات</caption>
+          <thead><tr><th scope="col">العنوان</th><th scope="col">النوع</th><th scope="col">السنة</th><th scope="col">الملف</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td><td>PDF</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-members" aria-labelledby="tab-members">
+        <div class="panel-head">
+          <h2 class="app-sub">الأعضاء</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">الأعضاء</caption>
+          <thead><tr><th scope="col">الاسم</th><th scope="col">نوع العضوية</th><th scope="col">تاريخ الانضمام</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td><td>فعّال</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-volunteers" aria-labelledby="tab-volunteers">
+        <div class="panel-head">
+          <h2 class="app-sub">المتطوعون</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">المتطوعون</caption>
+          <thead><tr><th scope="col">الاسم</th><th scope="col">المجال</th><th scope="col">تاريخ الطلب</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td><td>جديد</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-partners" aria-labelledby="tab-partners">
+        <div class="panel-head">
+          <h2 class="app-sub">الشركاء والداعمون</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">الشركاء والداعمون</caption>
+          <thead><tr><th scope="col">الجهة</th><th scope="col">نوع الشراكة</th><th scope="col">التاريخ</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-messages" aria-labelledby="tab-messages">
+        <div class="panel-head">
+          <h2 class="app-sub">الرسائل</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">الرسائل</caption>
+          <thead><tr><th scope="col">المرسل</th><th scope="col">الموضوع</th><th scope="col">التاريخ</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>—</td><td>غير مقروءة</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-finance" aria-labelledby="tab-finance">
+        <div class="panel-head">
+          <h2 class="app-sub">المالية</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">المالية</caption>
+          <thead><tr><th scope="col">التاريخ</th><th scope="col">البيان</th><th scope="col">النوع</th><th scope="col">المبلغ</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>إيراد / مصروف</td><td>—</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+      <section class="panel" role="tabpanel" id="panel-users" aria-labelledby="tab-users">
+        <div class="panel-head">
+          <h2 class="app-sub">المستخدمون والصلاحيات</h2>
+          <button class="btn small" type="button">+ إضافة</button>
+        </div>
+        <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">المستخدمون والصلاحيات</caption>
+          <thead><tr><th scope="col">الاسم</th><th scope="col">البريد</th><th scope="col">الصلاحية</th><th scope="col">الحالة</th></tr></thead>
+          <tbody><tr class="example-row"><td>مثال</td><td>—</td><td>مدير / محرر / مالي</td><td>فعّال</td></tr></tbody>
+        </table>
+      </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
